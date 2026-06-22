@@ -30,6 +30,15 @@ class Settings(BaseSettings):
     # Database
     database_url: str = "sqlite:///./triageiq.db"
 
+    # CORS — comma-separated list of allowed frontend origins.
+    # Dev default covers the local Next.js dev server; set CORS_ORIGINS in
+    # production to the deployed frontend URL (e.g. https://triageiq-web.vercel.app).
+    cors_origins: str = "http://localhost:3000"
+
+    @property
+    def cors_origins_list(self) -> list[str]:
+        return [o.strip() for o in self.cors_origins.split(",") if o.strip()]
+
     # Vector store (RAG)
     chroma_persist_dir: str = "./chroma_db"
 
