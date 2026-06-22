@@ -1,0 +1,21 @@
+data/eval_set.json
+  s_8359ed3b25928f::t_eb16894219d793 1-352
+data/synthetic_tickets.json
+  s_8359ed3b25928f::t_eb16894219d793 1-1402
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.10",
+  "base_commit_sha": "b8adb8db8112956f2eeaef0bbea0382758c92a44",
+  "prompts": {},
+  "sessions": {
+    "s_8359ed3b25928f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6669cf9b-5c15-48d5-b996-ed46f2c05116",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Precious Okolaa <okolaaprecious@gmail.com>"
+    }
+  }
+}
