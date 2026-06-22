@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 2,
+    "subject": "Feature request: dark mode",
+    "body": "It would be great if the app supported a dark theme for night-time use.",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 3,
+    "subject": "General feedback",
+    "body": "Just wanted to say the new UI redesign looks great, nice work!",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 4,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges. I need this resolved soon.",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 5,
+    "subject": "General feedback",
+    "body": "Just wanted to say the new UI redesign looks great, nice work!",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 6,
+    "subject": "Press inquiry",
+    "body": "I'm writing an article about productivity tools and would like a quick comment from your team.",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 7,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 8,
+    "subject": "Dashboard not loading",
+    "body": "The main dashboard has been stuck on a loading spinner for the past hour.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 9,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out.",
+    "true_category": "account",
+    "true_priority": "critical"
+  },
+  {
+    "id": 10,
+    "subject": "Need to change my email",
+    "body": "I want to update the email address associated with my account.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 11,
+    "subject": "Notifications not arriving",
+    "body": "I haven't received any email notifications in the past three days despite having them enabled. This is affecting our entire team and we cannot work.",
+    "true_category": "bug_report",
+    "true_priority": "critical"
+  },
+  {
+    "id": 12,
+    "subject": "Upgrade pricing question",
+    "body": "What would it cost to upgrade from the Basic to the Pro plan mid-cycle? I need this resolved soon.",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 13,
+    "subject": "Question about your roadmap",
+    "body": "Is there a public roadmap I can check to see upcoming features?",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 14,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 15,
+    "subject": "Question about invoice",
+    "body": "Can you explain why my invoice total is higher than my usual plan price? No rush, just flagging it.",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 16,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it? Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 17,
+    "subject": "How to invite team members",
+    "body": "I want to add three coworkers to my workspace but can't find an invite option.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 18,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 19,
+    "subject": "Partnership inquiry",
+    "body": "We're interested in exploring an integration partnership, who should I talk to? Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 20,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored. This is blocking important work for me.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 21,
+    "subject": "Question about invoice",
+    "body": "Can you explain why my invoice total is higher than my usual plan price? No rush, just flagging it.",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 22,
+    "subject": "Dashboard not loading",
+    "body": "The main dashboard has been stuck on a loading spinner for the past hour. This is urgent, please help immediately.",
+    "true_category": "bug_report",
+    "true_priority": "critical"
+  },
+  {
+    "id": 23,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 24,
+    "subject": "Export feature produces empty file",
+    "body": "When I export my report to CSV, the downloaded file is completely empty.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 25,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks.",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 26,
+    "subject": "Notifications not arriving",
+    "body": "I haven't received any email notifications in the past three days despite having them enabled.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 27,
+    "subject": "Question about plan limits",
+    "body": "How many projects can I create on the free plan before needing to upgrade?",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 28,
+    "subject": "Question about invoice",
+    "body": "Can you explain why my invoice total is higher than my usual plan price?",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 29,
+    "subject": "Notifications not arriving",
+    "body": "I haven't received any email notifications in the past three days despite having them enabled. This is affecting our entire team and we cannot work.",
+    "true_category": "bug_report",
+    "true_priority": "critical"
+  },
+  {
+    "id": 30,
+    "subject": "Press inquiry",
+    "body": "I'm writing an article about productivity tools and would like a quick comment from your team.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 31,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 32,
+    "subject": "Need to change my email",
+    "body": "I want to update the email address associated with my account. This is blocking important work for me.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 33,
+    "subject": "Is there a mobile app?",
+    "body": "Does your product have a mobile app, or is it web-only? This is urgent, please help immediately.",
+    "true_category": "product",
+    "true_priority": "critical"
+  },
+  {
+    "id": 34,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 35,
+    "subject": "Need a refund",
+    "body": "I cancelled my subscription last week but was still charged. I'd like a refund.",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 36,
+    "subject": "Partnership inquiry",
+    "body": "We're interested in exploring an integration partnership, who should I talk to?",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 37,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 38,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it? This is affecting our entire team and we cannot work.",
+    "true_category": "account",
+    "true_priority": "critical"
+  },
+  {
+    "id": 39,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore. This is urgent, please help immediately.",
+    "true_category": "account",
+    "true_priority": "critical"
+  },
+  {
+    "id": 40,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 41,
+    "subject": "Partnership inquiry",
+    "body": "We're interested in exploring an integration partnership, who should I talk to? Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 42,
+    "subject": "Partnership inquiry",
+    "body": "We're interested in exploring an integration partnership, who should I talk to?",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 43,
+    "subject": "Export feature produces empty file",
+    "body": "When I export my report to CSV, the downloaded file is completely empty.",
+    "true_category": "bug_report",
+    "true_priority": "low"
+  },
+  {
+    "id": 44,
+    "subject": "How to invite team members",
+    "body": "I want to add three coworkers to my workspace but can't find an invite option.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 45,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it? No rush, just flagging it.",
+    "true_category": "account",
+    "true_priority": "low"
+  },
+  {
+    "id": 46,
+    "subject": "Question about invoice",
+    "body": "Can you explain why my invoice total is higher than my usual plan price? This is blocking important work for me.",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 47,
+    "subject": "Upgrade pricing question",
+    "body": "What would it cost to upgrade from the Basic to the Pro plan mid-cycle?",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 48,
+    "subject": "How do I export my data?",
+    "body": "I can't find the export option anywhere in the settings menu. Where is it located? I need this resolved soon.",
+    "true_category": "product",
+    "true_priority": "high"
+  },
+  {
+    "id": 49,
+    "subject": "Question about invoice",
+    "body": "Can you explain why my invoice total is higher than my usual plan price?",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 50,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 51,
+    "subject": "Export feature produces empty file",
+    "body": "When I export my report to CSV, the downloaded file is completely empty. I need this resolved soon.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 52,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks. No rush, just flagging it.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 53,
+    "subject": "Export feature produces empty file",
+    "body": "When I export my report to CSV, the downloaded file is completely empty. This is urgent, please help immediately.",
+    "true_category": "bug_report",
+    "true_priority": "critical"
+  },
+  {
+    "id": 54,
+    "subject": "Dashboard not loading",
+    "body": "The main dashboard has been stuck on a loading spinner for the past hour. This is blocking important work for me.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 55,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges. I need this resolved soon.",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 56,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 57,
+    "subject": "Press inquiry",
+    "body": "I'm writing an article about productivity tools and would like a quick comment from your team.",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 58,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it?",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 59,
+    "subject": "Notifications not arriving",
+    "body": "I haven't received any email notifications in the past three days despite having them enabled. This is urgent, please help immediately.",
+    "true_category": "bug_report",
+    "true_priority": "critical"
+  },
+  {
+    "id": 60,
+    "subject": "General feedback",
+    "body": "Just wanted to say the new UI redesign looks great, nice work!",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 61,
+    "subject": "Is there a mobile app?",
+    "body": "Does your product have a mobile app, or is it web-only?",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 62,
+    "subject": "App crashes on startup",
+    "body": "Since the latest update, the app crashes immediately every time I open it.",
+    "true_category": "bug_report",
+    "true_priority": "critical"
+  },
+  {
+    "id": 63,
+    "subject": "Dashboard not loading",
+    "body": "The main dashboard has been stuck on a loading spinner for the past hour. No rush, just flagging it.",
+    "true_category": "bug_report",
+    "true_priority": "low"
+  },
+  {
+    "id": 64,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it?",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 65,
+    "subject": "Press inquiry",
+    "body": "I'm writing an article about productivity tools and would like a quick comment from your team. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 66,
+    "subject": "How do I export my data?",
+    "body": "I can't find the export option anywhere in the settings menu. Where is it located?",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 67,
+    "subject": "Need a refund",
+    "body": "I cancelled my subscription last week but was still charged. I'd like a refund. I need this resolved soon.",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 68,
+    "subject": "Notifications not arriving",
+    "body": "I haven't received any email notifications in the past three days despite having them enabled.",
+    "true_category": "bug_report",
+    "true_priority": "low"
+  },
+  {
+    "id": 69,
+    "subject": "How do I export my data?",
+    "body": "I can't find the export option anywhere in the settings menu. Where is it located?",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 70,
+    "subject": "How do I export my data?",
+    "body": "I can't find the export option anywhere in the settings menu. Where is it located?",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 71,
+    "subject": "Is there a mobile app?",
+    "body": "Does your product have a mobile app, or is it web-only? I need this resolved soon.",
+    "true_category": "product",
+    "true_priority": "high"
+  },
+  {
+    "id": 72,
+    "subject": "Question about plan limits",
+    "body": "How many projects can I create on the free plan before needing to upgrade?",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 73,
+    "subject": "Payment method declined",
+    "body": "My card was declined during renewal but I have funds available. Can you check what happened?",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 74,
+    "subject": "Question about your roadmap",
+    "body": "Is there a public roadmap I can check to see upcoming features?",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 75,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 76,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it?",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 77,
+    "subject": "Payment method declined",
+    "body": "My card was declined during renewal but I have funds available. Can you check what happened?",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 78,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 79,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore.",
+    "true_category": "account",
+    "true_priority": "low"
+  },
+  {
+    "id": 80,
+    "subject": "How to invite team members",
+    "body": "I want to add three coworkers to my workspace but can't find an invite option. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 81,
+    "subject": "Question about your roadmap",
+    "body": "Is there a public roadmap I can check to see upcoming features?",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 82,
+    "subject": "General feedback",
+    "body": "Just wanted to say the new UI redesign looks great, nice work!",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 83,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out.",
+    "true_category": "account",
+    "true_priority": "low"
+  },
+  {
+    "id": 84,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out.",
+    "true_category": "account",
+    "true_priority": "low"
+  },
+  {
+    "id": 85,
+    "subject": "Partnership inquiry",
+    "body": "We're interested in exploring an integration partnership, who should I talk to?",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 86,
+    "subject": "How to invite team members",
+    "body": "I want to add three coworkers to my workspace but can't find an invite option.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 87,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 88,
+    "subject": "Payment method declined",
+    "body": "My card was declined during renewal but I have funds available. Can you check what happened?",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 89,
+    "subject": "Need a refund",
+    "body": "I cancelled my subscription last week but was still charged. I'd like a refund.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 90,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 91,
+    "subject": "Notifications not arriving",
+    "body": "I haven't received any email notifications in the past three days despite having them enabled.",
+    "true_category": "bug_report",
+    "true_priority": "critical"
+  },
+  {
+    "id": 92,
+    "subject": "Question about plan limits",
+    "body": "How many projects can I create on the free plan before needing to upgrade? This is blocking important work for me.",
+    "true_category": "product",
+    "true_priority": "high"
+  },
+  {
+    "id": 93,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks.",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 94,
+    "subject": "Need a refund",
+    "body": "I cancelled my subscription last week but was still charged. I'd like a refund.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 95,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 96,
+    "subject": "Need a refund",
+    "body": "I cancelled my subscription last week but was still charged. I'd like a refund. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 97,
+    "subject": "Partnership inquiry",
+    "body": "We're interested in exploring an integration partnership, who should I talk to?",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 98,
+    "subject": "Feature request: dark mode",
+    "body": "It would be great if the app supported a dark theme for night-time use.",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 99,
+    "subject": "How to invite team members",
+    "body": "I want to add three coworkers to my workspace but can't find an invite option. No rush, just flagging it.",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 100,
+    "subject": "How to invite team members",
+    "body": "I want to add three coworkers to my workspace but can't find an invite option.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 101,
+    "subject": "Payment method declined",
+    "body": "My card was declined during renewal but I have funds available. Can you check what happened? No rush, just flagging it.",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 102,
+    "subject": "Feature request: dark mode",
+    "body": "It would be great if the app supported a dark theme for night-time use. No rush, just flagging it.",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 103,
+    "subject": "Need to change my email",
+    "body": "I want to update the email address associated with my account.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 104,
+    "subject": "How do I export my data?",
+    "body": "I can't find the export option anywhere in the settings menu. Where is it located? No rush, just flagging it.",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 105,
+    "subject": "Need to change my email",
+    "body": "I want to update the email address associated with my account. No rush, just flagging it.",
+    "true_category": "account",
+    "true_priority": "low"
+  },
+  {
+    "id": 106,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored. I need this resolved soon.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 107,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out. This is blocking important work for me.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 108,
+    "subject": "Question about plan limits",
+    "body": "How many projects can I create on the free plan before needing to upgrade? No rush, just flagging it.",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 109,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 110,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it?",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 111,
+    "subject": "Payment method declined",
+    "body": "My card was declined during renewal but I have funds available. Can you check what happened?",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 112,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 113,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 114,
+    "subject": "How to invite team members",
+    "body": "I want to add three coworkers to my workspace but can't find an invite option.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 115,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 116,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored. This is blocking important work for me.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 117,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it?",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 118,
+    "subject": "Feature request: dark mode",
+    "body": "It would be great if the app supported a dark theme for night-time use. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 119,
+    "subject": "Question about plan limits",
+    "body": "How many projects can I create on the free plan before needing to upgrade? No rush, just flagging it.",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 120,
+    "subject": "General feedback",
+    "body": "Just wanted to say the new UI redesign looks great, nice work!",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 121,
+    "subject": "Notifications not arriving",
+    "body": "I haven't received any email notifications in the past three days despite having them enabled. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 122,
+    "subject": "Search returns no results",
+    "body": "Search used to work fine but now returns zero results even for exact matches.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 123,
+    "subject": "Press inquiry",
+    "body": "I'm writing an article about productivity tools and would like a quick comment from your team.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 124,
+    "subject": "How do I export my data?",
+    "body": "I can't find the export option anywhere in the settings menu. Where is it located?",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 125,
+    "subject": "Question about your roadmap",
+    "body": "Is there a public roadmap I can check to see upcoming features?",
+    "true_category": "other",
+    "true_priority": "medium"
+  },
+  {
+    "id": 126,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 127,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges. This is blocking important work for me.",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 128,
+    "subject": "General feedback",
+    "body": "Just wanted to say the new UI redesign looks great, nice work!",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 129,
+    "subject": "Partnership inquiry",
+    "body": "We're interested in exploring an integration partnership, who should I talk to? No rush, just flagging it.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 130,
+    "subject": "Search returns no results",
+    "body": "Search used to work fine but now returns zero results even for exact matches. This is urgent, please help immediately.",
+    "true_category": "bug_report",
+    "true_priority": "critical"
+  },
+  {
+    "id": 131,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 132,
+    "subject": "Question about plan limits",
+    "body": "How many projects can I create on the free plan before needing to upgrade?",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 133,
+    "subject": "How do I export my data?",
+    "body": "I can't find the export option anywhere in the settings menu. Where is it located? Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 134,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks. No rush, just flagging it.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 135,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 136,
+    "subject": "Export feature produces empty file",
+    "body": "When I export my report to CSV, the downloaded file is completely empty. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 137,
+    "subject": "Dashboard not loading",
+    "body": "The main dashboard has been stuck on a loading spinner for the past hour.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 138,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 139,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it? This is affecting our entire team and we cannot work.",
+    "true_category": "account",
+    "true_priority": "critical"
+  },
+  {
+    "id": 140,
+    "subject": "How to invite team members",
+    "body": "I want to add three coworkers to my workspace but can't find an invite option.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 141,
+    "subject": "Question about invoice",
+    "body": "Can you explain why my invoice total is higher than my usual plan price? This is blocking important work for me.",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 142,
+    "subject": "Feature request: dark mode",
+    "body": "It would be great if the app supported a dark theme for night-time use. This is blocking important work for me.",
+    "true_category": "product",
+    "true_priority": "high"
+  },
+  {
+    "id": 143,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 144,
+    "subject": "Is there a mobile app?",
+    "body": "Does your product have a mobile app, or is it web-only?",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 145,
+    "subject": "Upgrade pricing question",
+    "body": "What would it cost to upgrade from the Basic to the Pro plan mid-cycle?",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 146,
+    "subject": "Need to change my email",
+    "body": "I want to update the email address associated with my account. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 147,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 148,
+    "subject": "Export feature produces empty file",
+    "body": "When I export my report to CSV, the downloaded file is completely empty. This is blocking important work for me.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 149,
+    "subject": "Payment method declined",
+    "body": "My card was declined during renewal but I have funds available. Can you check what happened?",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 150,
+    "subject": "Export feature produces empty file",
+    "body": "When I export my report to CSV, the downloaded file is completely empty.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 151,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks. This is blocking important work for me.",
+    "true_category": "other",
+    "true_priority": "high"
+  },
+  {
+    "id": 152,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 153,
+    "subject": "Export feature produces empty file",
+    "body": "When I export my report to CSV, the downloaded file is completely empty.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 154,
+    "subject": "Need a refund",
+    "body": "I cancelled my subscription last week but was still charged. I'd like a refund.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 155,
+    "subject": "Dashboard not loading",
+    "body": "The main dashboard has been stuck on a loading spinner for the past hour. This is blocking important work for me.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 156,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it?",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 157,
+    "subject": "App crashes on startup",
+    "body": "Since the latest update, the app crashes immediately every time I open it.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 158,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 159,
+    "subject": "Duplicate charge on my account",
+    "body": "I was charged twice for my subscription this month. Please refund one of the charges.",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 160,
+    "subject": "Upgrade pricing question",
+    "body": "What would it cost to upgrade from the Basic to the Pro plan mid-cycle?",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 161,
+    "subject": "App crashes on startup",
+    "body": "Since the latest update, the app crashes immediately every time I open it.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 162,
+    "subject": "Dashboard not loading",
+    "body": "The main dashboard has been stuck on a loading spinner for the past hour.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 163,
+    "subject": "Compliment",
+    "body": "Your support team helped me last week and they were fantastic, just wanted to say thanks.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 164,
+    "subject": "Question about invoice",
+    "body": "Can you explain why my invoice total is higher than my usual plan price?",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 165,
+    "subject": "General feedback",
+    "body": "Just wanted to say the new UI redesign looks great, nice work!",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 166,
+    "subject": "Search returns no results",
+    "body": "Search used to work fine but now returns zero results even for exact matches.",
+    "true_category": "bug_report",
+    "true_priority": "low"
+  },
+  {
+    "id": 167,
+    "subject": "Upgrade pricing question",
+    "body": "What would it cost to upgrade from the Basic to the Pro plan mid-cycle?",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 168,
+    "subject": "How do I export my data?",
+    "body": "I can't find the export option anywhere in the settings menu. Where is it located? No rush, just flagging it.",
+    "true_category": "product",
+    "true_priority": "low"
+  },
+  {
+    "id": 169,
+    "subject": "General feedback",
+    "body": "Just wanted to say the new UI redesign looks great, nice work!",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 170,
+    "subject": "Need a refund",
+    "body": "I cancelled my subscription last week but was still charged. I'd like a refund.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 171,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 172,
+    "subject": "Payment method declined",
+    "body": "My card was declined during renewal but I have funds available. Can you check what happened?",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 173,
+    "subject": "Dashboard not loading",
+    "body": "The main dashboard has been stuck on a loading spinner for the past hour. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 174,
+    "subject": "Is there a mobile app?",
+    "body": "Does your product have a mobile app, or is it web-only?",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 175,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored.",
+    "true_category": "account",
+    "true_priority": "medium"
+  },
+  {
+    "id": 176,
+    "subject": "Search returns no results",
+    "body": "Search used to work fine but now returns zero results even for exact matches. I need this resolved soon.",
+    "true_category": "bug_report",
+    "true_priority": "high"
+  },
+  {
+    "id": 177,
+    "subject": "Question about your roadmap",
+    "body": "Is there a public roadmap I can check to see upcoming features?",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 178,
+    "subject": "Need a refund",
+    "body": "I cancelled my subscription last week but was still charged. I'd like a refund.",
+    "true_category": "billing",
+    "true_priority": "low"
+  },
+  {
+    "id": 179,
+    "subject": "Notifications not arriving",
+    "body": "I haven't received any email notifications in the past three days despite having them enabled. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 180,
+    "subject": "Can't reset my password",
+    "body": "The password reset email never arrives even after multiple attempts. I'm locked out. This is blocking important work for me.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 181,
+    "subject": "Is there a mobile app?",
+    "body": "Does your product have a mobile app, or is it web-only? Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 182,
+    "subject": "Need to change my email",
+    "body": "I want to update the email address associated with my account.",
+    "true_category": "account",
+    "true_priority": "low"
+  },
+  {
+    "id": 183,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored.",
+    "true_category": "account",
+    "true_priority": "critical"
+  },
+  {
+    "id": 184,
+    "subject": "Question about invoice",
+    "body": "Can you explain why my invoice total is higher than my usual plan price? Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "billing",
+    "true_priority": "medium"
+  },
+  {
+    "id": 185,
+    "subject": "Partnership inquiry",
+    "body": "We're interested in exploring an integration partnership, who should I talk to?",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 186,
+    "subject": "Search returns no results",
+    "body": "Search used to work fine but now returns zero results even for exact matches.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 187,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 188,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored. I need this resolved soon.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 189,
+    "subject": "Question about your roadmap",
+    "body": "Is there a public roadmap I can check to see upcoming features?",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 190,
+    "subject": "Question about your roadmap",
+    "body": "Is there a public roadmap I can check to see upcoming features? No rush, just flagging it.",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 191,
+    "subject": "Need to change my email",
+    "body": "I want to update the email address associated with my account.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 192,
+    "subject": "How to invite team members",
+    "body": "I want to add three coworkers to my workspace but can't find an invite option. I need this resolved soon.",
+    "true_category": "product",
+    "true_priority": "high"
+  },
+  {
+    "id": 193,
+    "subject": "Feature request: dark mode",
+    "body": "It would be great if the app supported a dark theme for night-time use. Not urgent but I'd appreciate a resolution soon.",
+    "true_category": "product",
+    "true_priority": "medium"
+  },
+  {
+    "id": 194,
+    "subject": "Can't access team workspace",
+    "body": "I was removed from my team's workspace by mistake and need access restored.",
+    "true_category": "account",
+    "true_priority": "low"
+  },
+  {
+    "id": 195,
+    "subject": "Question about your roadmap",
+    "body": "Is there a public roadmap I can check to see upcoming features?",
+    "true_category": "other",
+    "true_priority": "low"
+  },
+  {
+    "id": 196,
+    "subject": "Two-factor authentication issue",
+    "body": "I lost access to my old phone number and can't get my 2FA codes anymore. This is blocking important work for me.",
+    "true_category": "account",
+    "true_priority": "high"
+  },
+  {
+    "id": 197,
+    "subject": "Upgrade pricing question",
+    "body": "What would it cost to upgrade from the Basic to the Pro plan mid-cycle?",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 198,
+    "subject": "Upgrade pricing question",
+    "body": "What would it cost to upgrade from the Basic to the Pro plan mid-cycle?",
+    "true_category": "billing",
+    "true_priority": "high"
+  },
+  {
+    "id": 199,
+    "subject": "App crashes on startup",
+    "body": "Since the latest update, the app crashes immediately every time I open it.",
+    "true_category": "bug_report",
+    "true_priority": "medium"
+  },
+  {
+    "id": 200,
+    "subject": "Account locked after failed logins",
+    "body": "My account got locked after a few failed login attempts. How do I unlock it? This is blocking important work for me.",
+    "true_category": "account",
+    "true_priority": "high"
+  }
+]
