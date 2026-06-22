@@ -19,3 +19,6 @@ dist/
 build/
 chroma_db/
 .DS_Store
+
+# Stray tooling/telemetry artifacts (not part of this project)
+asterix_story_log.json

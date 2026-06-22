@@ -26,7 +26,7 @@ jobs:
 
       - name: Run unit and integration tests
         run: |
-          pytest tests/test_classifier.py tests/test_api.py -v
-        # Note: tests/eval_classifier.py is excluded from CI since it requires
-        # a live Ollama instance with a pulled model. It's run manually/locally
-        # to produce the accuracy metrics reported in the Design & Testing doc.
+          pytest -v
+        # Note: tests/eval_classifier.py is a script (not a test module), so it is
+        # not collected here — it requires a live LLM and is run manually to produce
+        # the accuracy metrics reported in the Design & Testing doc.
