@@ -1,0 +1,21 @@
+app/main.py
+  s_8359ed3b25928f::t_86734e81249892 5,16-21
+app/config.py
+  s_8359ed3b25928f::t_7e52ac5f8cc9f3 33-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.10",
+  "base_commit_sha": "f3b259bde44edfb5a2579c8ecd04201ff5ec9be2",
+  "prompts": {},
+  "sessions": {
+    "s_8359ed3b25928f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6669cf9b-5c15-48d5-b996-ed46f2c05116",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Precious Okolaa <okolaaprecious@gmail.com>"
+    }
+  }
+}
