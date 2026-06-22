@@ -19,13 +19,15 @@ See [`docs/PROJECT_BRIEF.md`](docs/PROJECT_BRIEF.md) for full project context an
 
 ## Tech Stack
 
-- **Backend**: Python, FastAPI
-- **LLM**: Ollama (local, open-source models) — pluggable client architecture
+- **Backend**: Python, FastAPI (this repo) — deployed as a Vercel serverless function
+- **LLM**: pluggable client — **Ollama** locally (free/private); **Groq or OpenRouter** (free, OpenAI-compatible) in production
 - **Vector store**: Chroma (for RAG retrieval)
-- **Database**: SQLite (dev) / PostgreSQL (deployed)
-- **Frontend**: React (or lightweight server-rendered UI)
-- **Deployment**: Render (free tier)
+- **Database**: SQLite (dev) / PostgreSQL (deployed, e.g. Neon/Supabase free tier)
+- **Frontend**: Next.js + shadcn/ui — **separate repo** (`triageiq-web`), also on Vercel
+- **Deployment**: Vercel (free tier) — frontend and backend as two projects
 - **CI/CD**: GitHub Actions
+
+> **Repos:** the system is split into two repositories — `triageiq-api` (this one, FastAPI backend) and `triageiq-web` (Next.js frontend). Both deploy independently to Vercel and are shared with `quantic-grader`.
 
 ## Project Structure
 
