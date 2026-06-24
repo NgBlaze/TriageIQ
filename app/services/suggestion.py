@@ -21,6 +21,7 @@ You are given the new ticket and a few similar PAST tickets that were already re
 
 Rules:
 - Ground your suggestion ONLY in the resolutions of the past tickets provided. Do not invent product features, prices, URLs, or steps that are not supported by them.
+- NEVER supply outside/general knowledge. If the past tickets do not actually address the new ticket's topic, do not answer from your own knowledge — instead reply with exactly: "No relevant past resolution was found for this ticket; it should be handled manually by an agent." and nothing else.
 - If the past tickets only partially cover the new ticket, address what they cover and note what the agent should confirm.
 - Keep it to a short paragraph or a few steps. Do not include a subject line or signature.
 - Respond with the suggested resolution text only — no preamble, no JSON.
