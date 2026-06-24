@@ -48,9 +48,11 @@ def client():
     app.dependency_overrides.clear()
 
 
-def _mock_result(category=TicketCategory.BILLING, priority=TicketPriority.MEDIUM):
+def _mock_result(category=TicketCategory.BILLING, priority=TicketPriority.MEDIUM,
+                 confidence=0.9, needs_review=False):
     return ClassificationResult(
-        category=category, priority=priority, confidence=0.9, reasoning="r"
+        category=category, priority=priority, confidence=confidence,
+        reasoning="r", needs_review=needs_review,
     )
 
 
@@ -69,6 +71,20 @@ def test_submit_classifies_routes_and_persists(mock_classify, client):
     assert data["category"] == "billing"
     assert data["routed_team"] == "billing_team"
     assert data["status"] == "routed"
+
+
+@patch("app.api.tickets.classify_ticket")
+def test_low_confidence_ticket_flagged_for_review(mock_classify, client):
+    mock_classify.return_value = _mock_result(confidence=0.3, needs_review=True)
+
+    resp = client.post("/api/tickets", json={"subject": "Vague request", "body": "not sure"})
+
+    assert resp.status_code == 201
+    data = resp.json()
+    assert data["needs_review"] is True
+    assert data["status"] == "needs_review"
+    # And it surfaces as needs_review in the listed queue too.
+    assert client.get("/api/tickets").json()[0]["needs_review"] is True
 
 
 @patch("app.api.tickets.classify_ticket")

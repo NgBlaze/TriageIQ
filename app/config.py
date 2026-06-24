@@ -19,6 +19,13 @@ class Settings(BaseSettings):
     ollama_model: str = "llama3.1"
     ollama_host: str = "http://localhost:11434"
 
+    # Seconds to wait on any LLM call before failing (applies to all providers).
+    llm_timeout: float = 30.0
+
+    # Classifications at or below this confidence are flagged for manual review
+    # so uncertain predictions don't silently mis-route a ticket.
+    confidence_threshold: float = 0.5
+
     # Hosted provider (used when llm_provider == "openai_compatible").
     # Defaults target Groq's free, fast endpoint; swap base_url + model for OpenRouter/OpenAI.
     #   Groq:        https://api.groq.com/openai/v1   model e.g. llama-3.1-8b-instant

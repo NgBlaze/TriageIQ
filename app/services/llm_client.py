@@ -25,9 +25,11 @@ class LLMClient(ABC):
 class OllamaClient(LLMClient):
     """LLM client backed by a local Ollama instance (development default)."""
 
-    def __init__(self, model: str, host: str):
+    def __init__(self, model: str, host: str, timeout: float = 30.0):
         import ollama
-        self._client = ollama.Client(host=host)
+        # ollama.Client forwards kwargs to its underlying httpx client, so a
+        # timeout here bounds how long a hung local model can block a request.
+        self._client = ollama.Client(host=host, timeout=timeout)
         self._model = model
 
     def generate(self, prompt: str, system: str | None = None) -> str:
@@ -100,13 +102,18 @@ def get_llm_client() -> LLMClient:
     from app.config import settings
 
     if settings.llm_provider == "ollama":
-        return OllamaClient(model=settings.ollama_model, host=settings.ollama_host)
+        return OllamaClient(
+            model=settings.ollama_model,
+            host=settings.ollama_host,
+            timeout=settings.llm_timeout,
+        )
 
     if settings.llm_provider == "openai_compatible":
         return OpenAICompatibleClient(
             base_url=settings.llm_base_url,
             api_key=settings.llm_api_key,
             model=settings.llm_model,
+            timeout=settings.llm_timeout,
         )
 
     raise ValueError(f"Unsupported LLM provider: {settings.llm_provider}")

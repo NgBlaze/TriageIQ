@@ -51,6 +51,14 @@ def test_classify_endpoint_rejects_empty_subject():
     assert response.status_code == 422  # Pydantic validation error
 
 
+def test_classify_endpoint_rejects_whitespace_only_body():
+    response = client.post(
+        "/api/tickets/classify",
+        json={"subject": "Real subject", "body": "    "},
+    )
+    assert response.status_code == 422  # blank after strip
+
+
 @patch("app.api.tickets.classify_ticket")
 def test_classify_endpoint_handles_llm_failure(mock_classify):
     mock_classify.side_effect = ValueError("LLM unreachable")

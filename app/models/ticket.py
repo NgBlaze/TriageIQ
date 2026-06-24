@@ -4,7 +4,7 @@ Core data models for tickets.
 from enum import Enum
 from datetime import datetime
 from typing import Optional
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
 class TicketCategory(str, Enum):
@@ -37,6 +37,16 @@ class TicketCreate(BaseModel):
     body: str = Field(..., min_length=1, max_length=5000)
     customer_email: Optional[str] = None
 
+    @field_validator("subject", "body")
+    @classmethod
+    def _not_blank(cls, v: str) -> str:
+        """Reject whitespace-only input that would pass the length check but
+        carries no content for the classifier."""
+        stripped = v.strip()
+        if not stripped:
+            raise ValueError("must not be blank")
+        return stripped
+
 
 class ClassificationResult(BaseModel):
     """Output of the classification service."""
@@ -44,6 +54,7 @@ class ClassificationResult(BaseModel):
     priority: TicketPriority
     confidence: float = Field(..., ge=0.0, le=1.0)
     reasoning: Optional[str] = None  # brief model-provided rationale, useful for eval/debugging
+    needs_review: bool = False  # true when confidence is at/below the configured threshold
 
 
 class Ticket(BaseModel):
@@ -92,6 +103,7 @@ class TicketRead(BaseModel):
     confidence: Optional[float] = None
     routed_team: Optional[TeamQueue] = None
     status: str
+    needs_review: bool = False  # derived from confidence vs the configured threshold
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True, use_enum_values=True)

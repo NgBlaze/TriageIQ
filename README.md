@@ -102,6 +102,18 @@ Retrieval is pluggable via the `RETRIEVER` env var, mirroring the LLM provider:
   serverless-safe, so it runs on Vercel as-is.
 - `chroma` — a Chroma vector store with embeddings, for local development.
 
+### Hardening & low-confidence review
+
+- All LLM calls are bounded by `LLM_TIMEOUT` (default 30s); classification,
+  suggestion, and submit endpoints return **502** on LLM failure and persist
+  nothing on a failed classification.
+- Input is validated and whitespace-only subject/body is rejected (**422**).
+- Classifications with confidence `<= CONFIDENCE_THRESHOLD` (default 0.5) are
+  flagged: the ticket's `needs_review` is `true` and its status is `needs_review`,
+  so uncertain predictions surface in the queue instead of silently mis-routing.
+- A qualitative RAG eval harness lives at `tests/eval_rag.py`
+  (`python -m tests.eval_rag`, needs a live LLM).
+
 ### Running Tests
 ```bash
 pytest

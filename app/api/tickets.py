@@ -10,6 +10,7 @@ from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 
+from app.config import settings
 from app.db import get_db
 from app.models.ticket import (
     ClassificationResult,
@@ -25,6 +26,14 @@ from app.services.router import route_ticket
 from app.services.suggestion import suggest_resolution
 
 router = APIRouter(prefix="/api/tickets", tags=["tickets"])
+
+
+def _to_read(row) -> TicketRead:
+    """Build a TicketRead from a persisted row, deriving needs_review from the
+    stored confidence so the flag is computed consistently without a DB column."""
+    read = TicketRead.model_validate(row)
+    read.needs_review = row.confidence is not None and row.confidence <= settings.confidence_threshold
+    return read
 
 
 @router.post("/classify", response_model=ClassificationResult)
@@ -72,9 +81,9 @@ def submit_ticket(ticket: TicketCreate, db: Session = Depends(get_db)) -> Ticket
         priority=result.priority.value,
         confidence=result.confidence,
         routed_team=routed_team.value,
-        status="routed",
+        status="needs_review" if result.needs_review else "routed",
     )
-    return TicketRead.model_validate(stored)
+    return _to_read(stored)
 
 
 @router.post("/suggest", response_model=ResolutionSuggestion)
@@ -108,4 +117,4 @@ def list_queue(
         team=team.value if team else None,
         priority=priority.value if priority else None,
     )
-    return [TicketRead.model_validate(row) for row in rows]
+    return [_to_read(row) for row in rows]

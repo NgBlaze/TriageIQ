@@ -79,9 +79,13 @@ Response:"""
     raw_response = llm.generate(prompt=prompt, system=SYSTEM_PROMPT)
     parsed = _parse_llm_response(raw_response)
 
+    from app.config import settings
+
+    confidence = float(parsed["confidence"])
     return ClassificationResult(
         category=TicketCategory(parsed["category"]),
         priority=TicketPriority(parsed["priority"]),
-        confidence=float(parsed["confidence"]),
+        confidence=confidence,
         reasoning=parsed.get("reasoning"),
+        needs_review=confidence <= settings.confidence_threshold,
     )
