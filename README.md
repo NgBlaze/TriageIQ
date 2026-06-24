@@ -85,8 +85,22 @@ The API will be available at `http://localhost:8000`, with interactive docs at `
 | `POST` | `/api/tickets/classify` | Classify a ticket (category + priority), no persistence |
 | `POST` | `/api/tickets` | Full triage: classify → route to team queue → persist |
 | `GET` | `/api/tickets` | List the triaged queue; filter by `team` and/or `priority` |
+| `POST` | `/api/tickets/suggest` | RAG resolution suggestion + source tickets (no persistence) |
 
 Routing is deterministic: any `critical` ticket goes to **escalations**; otherwise the ticket routes by category (billing→billing_team, product→product_team, account→account_support, bug_report→engineering, other→general_support).
+
+### RAG resolution suggestions
+
+`/api/tickets/suggest` retrieves the most similar resolved tickets from a curated
+corpus (`data/resolved_tickets.json`) and asks the LLM to draft a resolution
+grounded only in those past resolutions, returning the suggestion plus its source
+tickets. If nothing sufficiently similar is found it declines (`has_match: false`)
+rather than guess.
+
+Retrieval is pluggable via the `RETRIEVER` env var, mirroring the LLM provider:
+- `tfidf` (default) — pure-python TF-IDF cosine similarity; zero dependencies and
+  serverless-safe, so it runs on Vercel as-is.
+- `chroma` — a Chroma vector store with embeddings, for local development.
 
 ### Running Tests
 ```bash

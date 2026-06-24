@@ -1,7 +1,12 @@
 # Keep the serverless bundle small — exclude things not needed at runtime.
+# NOTE: data/resolved_tickets.json IS needed at runtime (RAG corpus), so we
+# exclude only the dev-only datasets and generators, not the whole data/ dir.
 tests/
 docs/
-data/
+data/synthetic_tickets.json
+data/eval_set.json
+data/generate_synthetic_tickets.py
+data/generate_resolved_tickets.py
 *.db
 *.sqlite3
 .pytest_cache/

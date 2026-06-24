@@ -19,7 +19,9 @@ See `docs/PROJECT_BRIEF.md`, `docs/USER_STORIES.md`, and `README.md` for full co
 - `app/main.py` — FastAPI entrypoint (`/health`, mounts routers, CORS).
 - `app/config.py` — env-based settings (`pydantic-settings`).
 - `app/models/` — Pydantic models + taxonomy (category/priority/team enums).
-- `app/services/` — business logic: `classifier.py`, `llm_client.py` (provider abstraction + factory).
+- `app/services/` — business logic: `classifier.py`, `llm_client.py` (provider abstraction + factory),
+  `router.py` (rule-based routing), `repository.py` (DB access), `retriever.py` (pluggable RAG retrieval:
+  TF-IDF prod / Chroma dev), `suggestion.py` (RAG resolution suggestions).
 - `app/api/` — route definitions.
 - `data/` — synthetic dataset generator + dataset + eval set.
 - `tests/` — unit/integration tests (mock the model client; no network/key needed). `eval_classifier.py` is a

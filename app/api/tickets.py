@@ -13,6 +13,7 @@ from sqlalchemy.orm import Session
 from app.db import get_db
 from app.models.ticket import (
     ClassificationResult,
+    ResolutionSuggestion,
     TeamQueue,
     TicketCreate,
     TicketPriority,
@@ -21,6 +22,7 @@ from app.models.ticket import (
 from app.services import repository
 from app.services.classifier import classify_ticket
 from app.services.router import route_ticket
+from app.services.suggestion import suggest_resolution
 
 router = APIRouter(prefix="/api/tickets", tags=["tickets"])
 
@@ -73,6 +75,22 @@ def submit_ticket(ticket: TicketCreate, db: Session = Depends(get_db)) -> Ticket
         status="routed",
     )
     return TicketRead.model_validate(stored)
+
+
+@router.post("/suggest", response_model=ResolutionSuggestion)
+def suggest(ticket: TicketCreate) -> ResolutionSuggestion:
+    """
+    Draft a RAG-grounded resolution suggestion for a ticket, plus the past
+    tickets it drew from. Does not persist anything. Returns `has_match=false`
+    with a note when no sufficiently similar past ticket exists.
+    """
+    try:
+        return suggest_resolution(subject=ticket.subject, body=ticket.body)
+    except Exception as exc:
+        raise HTTPException(
+            status_code=502,
+            detail=f"Suggestion generation failed: {exc}",
+        ) from exc
 
 
 @router.get("", response_model=list[TicketRead])

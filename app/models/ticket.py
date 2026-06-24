@@ -62,6 +62,22 @@ class Ticket(BaseModel):
     model_config = ConfigDict(use_enum_values=True)
 
 
+class SuggestionSource(BaseModel):
+    """A past resolved ticket that a resolution suggestion was grounded in."""
+    id: int
+    subject: str
+    category: TicketCategory
+    score: float  # retrieval similarity (0..1), higher = more similar
+
+
+class ResolutionSuggestion(BaseModel):
+    """A RAG-generated resolution suggestion plus the tickets it drew from."""
+    has_match: bool  # whether a sufficiently similar past ticket was found
+    suggestion: Optional[str] = None  # drafted resolution; None when has_match is False
+    sources: list[SuggestionSource] = Field(default_factory=list)
+    note: Optional[str] = None  # guidance when no confident match (manual review)
+
+
 class TicketRead(BaseModel):
     """API response shape for a persisted, triaged ticket.
 

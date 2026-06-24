@@ -39,8 +39,20 @@ class Settings(BaseSettings):
     def cors_origins_list(self) -> list[str]:
         return [o.strip() for o in self.cors_origins.split(",") if o.strip()]
 
-    # Vector store (RAG)
+    # --- RAG / resolution suggestions ---
+    # Retriever backend, selected like the LLM provider:
+    #   "tfidf"  -> pure-python TF-IDF cosine; zero deps, serverless-safe (prod default)
+    #   "chroma" -> Chroma vector store + embeddings (local dev / design-doc story)
+    retriever: str = "tfidf"
+    rag_corpus_path: str = "data/resolved_tickets.json"
+    rag_top_k: int = 3
+    # Minimum similarity score for a retrieved ticket to count as a confident
+    # match; below this the suggestion service declines rather than guess.
+    rag_min_score: float = 0.05
+
+    # Vector store (RAG, used when retriever == "chroma")
     chroma_persist_dir: str = "./chroma_db"
+    embedding_model: str = "nomic-embed-text"  # Ollama embedding model for dev
 
     model_config = SettingsConfigDict(env_file=".env")
 
