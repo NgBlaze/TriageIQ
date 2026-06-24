@@ -10,12 +10,26 @@ Run with: python -m tests.eval_classifier
 (requires a running Ollama instance with the configured model pulled)
 """
 import json
+import time
 from collections import defaultdict
 
 from app.services.classifier import classify_ticket
 
 
-def run_evaluation(eval_path: str = "data/eval_set.json") -> dict:
+def _classify_with_retry(subject: str, body: str, retries: int = 3, backoff: float = 5.0):
+    """Classify with retry/backoff so transient rate limits (HTTP 429) on a free
+    hosted provider don't abort the run."""
+    for attempt in range(retries):
+        try:
+            return classify_ticket(subject, body)
+        except Exception as exc:
+            if "429" in str(exc) and attempt < retries - 1:
+                time.sleep(backoff * (attempt + 1))
+                continue
+            raise
+
+
+def run_evaluation(eval_path: str = "data/eval_set.json", delay: float = 1.5) -> dict:
     with open(eval_path) as f:
         eval_set = json.load(f)
 
@@ -26,10 +40,12 @@ def run_evaluation(eval_path: str = "data/eval_set.json") -> dict:
 
     for ticket in eval_set:
         try:
-            prediction = classify_ticket(ticket["subject"], ticket["body"])
+            prediction = _classify_with_retry(ticket["subject"], ticket["body"])
         except Exception as exc:
             failures.append({"id": ticket["id"], "error": str(exc)})
             continue
+        # Be polite to free-tier rate limits between requests.
+        time.sleep(delay)
 
         cat_match = prediction.category.value == ticket["true_category"]
         pri_match = prediction.priority.value == ticket["true_priority"]

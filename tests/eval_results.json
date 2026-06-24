@@ -1,0 +1,532 @@
+{
+  "total_evaluated": 46,
+  "failures": 4,
+  "category_accuracy": 0.913,
+  "priority_accuracy": 0.587,
+  "results": [
+    {
+      "id": 48,
+      "subject": "How do I export my data?",
+      "true_category": "product",
+      "predicted_category": "product",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "medium",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 14,
+      "subject": "Duplicate charge on my account",
+      "true_category": "billing",
+      "predicted_category": "billing",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "medium",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 65,
+      "subject": "Press inquiry",
+      "true_category": "other",
+      "predicted_category": "other",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "low",
+      "priority_match": false,
+      "confidence": 0.98
+    },
+    {
+      "id": 123,
+      "subject": "Press inquiry",
+      "true_category": "other",
+      "predicted_category": "other",
+      "category_match": true,
+      "true_priority": "low",
+      "predicted_priority": "low",
+      "priority_match": true,
+      "confidence": 0.99
+    },
+    {
+      "id": 30,
+      "subject": "Press inquiry",
+      "true_category": "other",
+      "predicted_category": "other",
+      "category_match": true,
+      "true_priority": "low",
+      "predicted_priority": "low",
+      "priority_match": true,
+      "confidence": 0.99
+    },
+    {
+      "id": 17,
+      "subject": "How to invite team members",
+      "true_category": "product",
+      "predicted_category": "product",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "medium",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 103,
+      "subject": "Need to change my email",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "low",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 126,
+      "subject": "Two-factor authentication issue",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "high",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 19,
+      "subject": "Partnership inquiry",
+      "true_category": "other",
+      "predicted_category": "other",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "low",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 148,
+      "subject": "Export feature produces empty file",
+      "true_category": "bug_report",
+      "predicted_category": "product",
+      "category_match": false,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 162,
+      "subject": "Dashboard not loading",
+      "true_category": "bug_report",
+      "predicted_category": "bug_report",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "high",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 176,
+      "subject": "Search returns no results",
+      "true_category": "bug_report",
+      "predicted_category": "product",
+      "category_match": false,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 199,
+      "subject": "App crashes on startup",
+      "true_category": "bug_report",
+      "predicted_category": "bug_report",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "high",
+      "priority_match": false,
+      "confidence": 0.98
+    },
+    {
+      "id": 39,
+      "subject": "Two-factor authentication issue",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "critical",
+      "predicted_priority": "high",
+      "priority_match": false,
+      "confidence": 0.98
+    },
+    {
+      "id": 187,
+      "subject": "Two-factor authentication issue",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 145,
+      "subject": "Upgrade pricing question",
+      "true_category": "billing",
+      "predicted_category": "product",
+      "category_match": false,
+      "true_priority": "medium",
+      "predicted_priority": "low",
+      "priority_match": false,
+      "confidence": 0.98
+    },
+    {
+      "id": 78,
+      "subject": "Duplicate charge on my account",
+      "true_category": "billing",
+      "predicted_category": "billing",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "medium",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 22,
+      "subject": "Dashboard not loading",
+      "true_category": "bug_report",
+      "predicted_category": "bug_report",
+      "category_match": true,
+      "true_priority": "critical",
+      "predicted_priority": "critical",
+      "priority_match": true,
+      "confidence": 0.98
+    },
+    {
+      "id": 64,
+      "subject": "Account locked after failed logins",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "high",
+      "priority_match": false,
+      "confidence": 0.98
+    },
+    {
+      "id": 31,
+      "subject": "Duplicate charge on my account",
+      "true_category": "billing",
+      "predicted_category": "billing",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "medium",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 143,
+      "subject": "Can't access team workspace",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 107,
+      "subject": "Can't reset my password",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.93
+    },
+    {
+      "id": 156,
+      "subject": "Account locked after failed logins",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.98
+    },
+    {
+      "id": 159,
+      "subject": "Duplicate charge on my account",
+      "true_category": "billing",
+      "predicted_category": "billing",
+      "category_match": true,
+      "true_priority": "low",
+      "predicted_priority": "medium",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 58,
+      "subject": "Account locked after failed logins",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.98
+    },
+    {
+      "id": 134,
+      "subject": "Compliment",
+      "true_category": "other",
+      "predicted_category": "other",
+      "category_match": true,
+      "true_priority": "low",
+      "predicted_priority": "low",
+      "priority_match": true,
+      "confidence": 0.99
+    },
+    {
+      "id": 98,
+      "subject": "Feature request: dark mode",
+      "true_category": "product",
+      "predicted_category": "product",
+      "category_match": true,
+      "true_priority": "low",
+      "predicted_priority": "low",
+      "priority_match": true,
+      "confidence": 0.98
+    },
+    {
+      "id": 116,
+      "subject": "Can't access team workspace",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.9
+    },
+    {
+      "id": 114,
+      "subject": "How to invite team members",
+      "true_category": "product",
+      "predicted_category": "product",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "medium",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 77,
+      "subject": "Payment method declined",
+      "true_category": "billing",
+      "predicted_category": "billing",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "medium",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 151,
+      "subject": "Compliment",
+      "true_category": "other",
+      "predicted_category": "other",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "low",
+      "priority_match": false,
+      "confidence": 0.98
+    },
+    {
+      "id": 110,
+      "subject": "Account locked after failed logins",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "high",
+      "priority_match": false,
+      "confidence": 0.98
+    },
+    {
+      "id": 79,
+      "subject": "Two-factor authentication issue",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "low",
+      "predicted_priority": "high",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 146,
+      "subject": "Need to change my email",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "medium",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 189,
+      "subject": "Question about your roadmap",
+      "true_category": "other",
+      "predicted_category": "product",
+      "category_match": false,
+      "true_priority": "low",
+      "predicted_priority": "low",
+      "priority_match": true,
+      "confidence": 0.98
+    },
+    {
+      "id": 16,
+      "subject": "Account locked after failed logins",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "medium",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 157,
+      "subject": "App crashes on startup",
+      "true_category": "bug_report",
+      "predicted_category": "bug_report",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "high",
+      "priority_match": false,
+      "confidence": 0.98
+    },
+    {
+      "id": 54,
+      "subject": "Dashboard not loading",
+      "true_category": "bug_report",
+      "predicted_category": "bug_report",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 55,
+      "subject": "Duplicate charge on my account",
+      "true_category": "billing",
+      "predicted_category": "billing",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "medium",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 21,
+      "subject": "Question about invoice",
+      "true_category": "billing",
+      "predicted_category": "billing",
+      "category_match": true,
+      "true_priority": "low",
+      "predicted_priority": "low",
+      "priority_match": true,
+      "confidence": 0.85
+    },
+    {
+      "id": 41,
+      "subject": "Partnership inquiry",
+      "true_category": "other",
+      "predicted_category": "other",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "low",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 62,
+      "subject": "App crashes on startup",
+      "true_category": "bug_report",
+      "predicted_category": "bug_report",
+      "category_match": true,
+      "true_priority": "critical",
+      "predicted_priority": "high",
+      "priority_match": false,
+      "confidence": 0.98
+    },
+    {
+      "id": 45,
+      "subject": "Account locked after failed logins",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "low",
+      "predicted_priority": "medium",
+      "priority_match": false,
+      "confidence": 0.85
+    },
+    {
+      "id": 20,
+      "subject": "Can't access team workspace",
+      "true_category": "account",
+      "predicted_category": "account",
+      "category_match": true,
+      "true_priority": "high",
+      "predicted_priority": "high",
+      "priority_match": true,
+      "confidence": 0.9
+    },
+    {
+      "id": 163,
+      "subject": "Compliment",
+      "true_category": "other",
+      "predicted_category": "other",
+      "category_match": true,
+      "true_priority": "low",
+      "predicted_priority": "low",
+      "priority_match": true,
+      "confidence": 0.99
+    },
+    {
+      "id": 1,
+      "subject": "Duplicate charge on my account",
+      "true_category": "billing",
+      "predicted_category": "billing",
+      "category_match": true,
+      "true_priority": "medium",
+      "predicted_priority": "medium",
+      "priority_match": true,
+      "confidence": 0.85
+    }
+  ],
+  "failure_details": [
+    {
+      "id": 153,
+      "error": "Could not find JSON in LLM response: '{\"category\": \"product\", \"priority\": \"medium\", \"confidence\": 0.85, \"reasoning\": \"Functionality broken with clear workaround (exporting report directly from app).\"'"
+    },
+    {
+      "id": 26,
+      "error": "Could not find JSON in LLM response: '{\"category\": \"product\", \"priority\": \"medium\", \"confidence\": 0.85, \"reasoning\": \"Notifications not arriving, but workaround exists (checking settings).\"'"
+    },
+    {
+      "id": 68,
+      "error": "Could not find JSON in LLM response: '{\"category\": \"product\", \"priority\": \"medium\", \"confidence\": 0.85, \"reasoning\": \"Notifications not arriving, but workaround exists (checking settings).\"'"
+    },
+    {
+      "id": 142,
+      "error": "Could not find JSON in LLM response: '{\"category\": \"product\", \"priority\": \"medium\", \"confidence\": 0.85, \"reasoning\": \"Feature request with moderate inconvenience but clear workaround (using a third-party theme app).\"'"
+    }
+  ]
+}
