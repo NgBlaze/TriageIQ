@@ -34,9 +34,10 @@ See [`docs/PROJECT_BRIEF.md`](docs/PROJECT_BRIEF.md) for full project context an
 ```
 triageiq/
 ├── app/
-│   ├── main.py              # FastAPI app entrypoint
-│   ├── models/               # Pydantic models & DB schema
-│   ├── services/             # Business logic (classification, routing, RAG)
+│   ├── main.py              # FastAPI app entrypoint (+ DB schema init on startup)
+│   ├── db.py                 # SQLAlchemy engine/session (SQLite dev → Postgres prod)
+│   ├── models/               # Pydantic API models + SQLAlchemy ORM models
+│   ├── services/             # Business logic (classification, routing, persistence, RAG)
 │   ├── api/                  # API route definitions
 │   └── config.py             # App configuration / env settings
 ├── data/
@@ -75,6 +76,17 @@ uvicorn app.main:app --reload
 ```
 
 The API will be available at `http://localhost:8000`, with interactive docs at `http://localhost:8000/docs`.
+
+### API Endpoints
+
+| Method | Path | Description |
+|---|---|---|
+| `GET` | `/health` | Health check |
+| `POST` | `/api/tickets/classify` | Classify a ticket (category + priority), no persistence |
+| `POST` | `/api/tickets` | Full triage: classify → route to team queue → persist |
+| `GET` | `/api/tickets` | List the triaged queue; filter by `team` and/or `priority` |
+
+Routing is deterministic: any `critical` ticket goes to **escalations**; otherwise the ticket routes by category (billing→billing_team, product→product_team, account→account_support, bug_report→engineering, other→general_support).
 
 ### Running Tests
 ```bash
