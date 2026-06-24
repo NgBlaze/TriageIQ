@@ -68,8 +68,8 @@ cd triageiq
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (dev set includes Ollama, Chroma, and test tooling)
+pip install -r requirements-dev.txt
 
 # Run the app
 uvicorn app.main:app --reload
@@ -92,6 +92,34 @@ Routing is deterministic: any `critical` ticket goes to **escalations**; otherwi
 ```bash
 pytest
 ```
+
+## Deployment (Vercel)
+
+The backend deploys to Vercel as a Python serverless function. `api/index.py`
+re-exports the FastAPI app and `vercel.json` routes all requests to it; the same
+app object runs locally and in production.
+
+**Steps:**
+1. Import this repo as a Vercel project (root directory = repo root). Vercel
+   detects `vercel.json` and installs `requirements.txt` (prod-lean).
+2. Provision a free Postgres database (e.g. [Neon](https://neon.tech)) — Vercel's
+   filesystem is ephemeral, so SQLite won't persist.
+3. Set the project's Environment Variables in Vercel:
+
+   | Variable | Value |
+   |---|---|
+   | `LLM_PROVIDER` | `openai_compatible` |
+   | `LLM_BASE_URL` | `https://api.groq.com/openai/v1` (or OpenRouter) |
+   | `LLM_MODEL` | `llama-3.1-8b-instant` (or an OpenRouter model) |
+   | `LLM_API_KEY` | your Groq / OpenRouter key |
+   | `DATABASE_URL` | the Postgres connection string (`postgres://…` is auto-normalized) |
+   | `CORS_ORIGINS` | the deployed frontend URL, e.g. `https://triageiq-web.vercel.app` |
+
+4. Deploy. Verify `GET /health` on the deployed URL, then exercise
+   `POST /api/tickets` and `GET /api/tickets`.
+
+> Note: `chromadb` (RAG, Sprint 3) is intentionally **not** in the prod bundle yet
+> — it's in `requirements-dev.txt`. Revisit `requirements.txt` when RAG ships to deployment.
 
 ## Sprint Plan
 

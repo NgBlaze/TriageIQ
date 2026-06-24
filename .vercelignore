@@ -1,0 +1,9 @@
+# Keep the serverless bundle small — exclude things not needed at runtime.
+tests/
+docs/
+data/
+*.db
+*.sqlite3
+.pytest_cache/
+requirements-dev.txt
+asterix_story_log.json
